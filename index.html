@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quitanda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="titulo">
+          <h1>Quitanda</h1>
+        </div>
+        <div class="cart-icon" id="cart-icon">
+          <img
+            src="D:\html codigos\quitanda\img\download-removebg-preview.png"
+            alt="Carrinho" />
+          <div class="cart-menu" id="cart-menu">
+            <ul id="carrinho"></ul>
+            <p id="total">Total: $0.00</p>
+            <button id="limpar-carrinho" class="limpar-carrinho">
+              Limpar Carrinho
+            </button>
+            <button id="confirmar-compra" class="confirmar-compra">
+              Confirmar Compra
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="produtos">
+        <!-- Adicione produtos aqui -->
+        <div class="produto">
+          <p>Maçã - $3</p>
+          <img src="https://via.placeholder.com/150?text=Maçã" alt="Maçã" />
+          <button
+            class="adicionar"
+            data-nome="Maçã"
+            data-preco="3"
+            data-img="https://via.placeholder.com/150?text=Maçã">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Banana - $2</p>
+          <img src="https://via.placeholder.com/150?text=Banana" alt="Banana" />
+          <button
+            class="adicionar"
+            data-nome="Banana"
+            data-preco="2"
+            data-img="https://via.placeholder.com/150?text=Banana">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Laranja - $4</p>
+          <img
+            src="https://via.placeholder.com/150?text=Laranja"
+            alt="Laranja" />
+          <button
+            class="adicionar"
+            data-nome="Laranja"
+            data-preco="4"
+            data-img="https://via.placeholder.com/150?text=Laranja">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Abacaxi - $5</p>
+          <img
+            src="https://via.placeholder.com/150?text=Abacaxi"
+            alt="Abacaxi" />
+          <button
+            class="adicionar"
+            data-nome="Abacaxi"
+            data-preco="5"
+            data-img="https://via.placeholder.com/150?text=Abacaxi">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Tomate - $3</p>
+          <img src="https://via.placeholder.com/150?text=Tomate" alt="Tomate" />
+          <button
+            class="adicionar"
+            data-nome="Tomate"
+            data-preco="3"
+            data-img="https://via.placeholder.com/150?text=Tomate">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Cebola - $2</p>
+          <img src="https://via.placeholder.com/150?text=Cebola" alt="Cebola" />
+          <button
+            class="adicionar"
+            data-nome="Cebola"
+            data-preco="2"
+            data-img="https://via.placeholder.com/150?text=Cebola">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Alface - $1.5</p>
+          <img src="https://via.placeholder.com/150?text=Alface" alt="Alface" />
+          <button
+            class="adicionar"
+            data-nome="Alface"
+            data-preco="1.5"
+            data-img="https://via.placeholder.com/150?text=Alface">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Batata - $4</p>
+          <img src="https://via.placeholder.com/150?text=Batata" alt="Batata" />
+          <button
+            class="adicionar"
+            data-nome="Batata"
+            data-preco="4"
+            data-img="https://via.placeholder.com/150?text=Batata">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Cenoura - $3</p>
+          <img
+            src="https://via.placeholder.com/150?text=Cenoura"
+            alt="Cenoura" />
+          <button
+            class="adicionar"
+            data-nome="Cenoura"
+            data-preco="3"
+            data-img="https://via.placeholder.com/150?text=Cenoura">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Melancia - $6</p>
+          <img
+            src="https://via.placeholder.com/150?text=Melancia"
+            alt="Melancia" />
+          <button
+            class="adicionar"
+            data-nome="Melancia"
+            data-preco="6"
+            data-img="https://via.placeholder.com/150?text=Melancia">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Manga - $4.5</p>
+          <img src="https://via.placeholder.com/150?text=Manga" alt="Manga" />
+          <button
+            class="adicionar"
+            data-nome="Manga"
+            data-preco="4.5"
+            data-img="https://via.placeholder.com/150?text=Manga">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Abobrinha - $3.5</p>
+          <img
+            src="https://via.placeholder.com/150?text=Abobrinha"
+            alt="Abobrinha" />
+          <button
+            class="adicionar"
+            data-nome="Abobrinha"
+            data-preco="3.5"
+            data-img="https://via.placeholder.com/150?text=Abobrinha">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Pimentão - $2.5</p>
+          <img
+            src="https://via.placeholder.com/150?text=Pimentão"
+            alt="Pimentão" />
+          <button
+            class="adicionar"
+            data-nome="Pimentão"
+            data-preco="2.5"
+            data-img="https://via.placeholder.com/150?text=Pimentão">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Berinjela - $3.5</p>
+          <img
+            src="https://via.placeholder.com/150?text=Berinjela"
+            alt="Berinjela" />
+          <button
+            class="adicionar"
+            data-nome="Berinjela"
+            data-preco="3.5"
+            data-img="https://via.placeholder.com/150?text=Berinjela">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Kiwi - $5</p>
+          <img src="https://via.placeholder.com/150?text=Kiwi" alt="Kiwi" />
+          <button
+            class="adicionar"
+            data-nome="Kiwi"
+            data-preco="5"
+            data-img="https://via.placeholder.com/150?text=Kiwi">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Uva - $4.5</p>
+          <img src="https://via.placeholder.com/150?text=Uva" alt="Uva" />
+          <button
+            class="adicionar"
+            data-nome="Uva"
+            data-preco="4.5"
+            data-img="https://via.placeholder.com/150?text=Uva">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Limão - $2</p>
+          <img src="https://via.placeholder.com/150?text=Limão" alt="Limão" />
+          <button
+            class="adicionar"
+            data-nome="Limão"
+            data-preco="2"
+            data-img="https://via.placeholder.com/150?text=Limão">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Maracujá - $3.5</p>
+          <img
+            src="https://via.placeholder.com/150?text=Maracujá"
+            alt="Maracujá" />
+          <button
+            class="adicionar"
+            data-nome="Maracujá"
+            data-preco="3.5"
+            data-img="https://via.placeholder.com/150?text=Maracujá">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Abóbora - $4</p>
+          <img
+            src="https://via.placeholder.com/150?text=Abóbora"
+            alt="Abóbora" />
+          <button
+            class="adicionar"
+            data-nome="Abóbora"
+            data-preco="4"
+            data-img="https://via.placeholder.com/150?text=Abóbora">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <p>Chuchu - $2.5</p>
+          <img src="https://via.placeholder.com/150?text=Chuchu" alt="Chuchu" />
+          <button
+            class="adicionar"
+            data-nome="Chuchu"
+            data-preco="2.5"
+            data-img="https://via.placeholder.com/150?text=Chuchu">
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Quitanda. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

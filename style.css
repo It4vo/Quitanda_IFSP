@@ -1,0 +1,233 @@
+*{
+  margin: 0%;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d0cfcf;
+}
+
+header {
+  background-color: #9f6d28;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position:fixed;
+  width: 100%;
+  
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+  
+}
+.header-container,h1{
+  margin-left: 390px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  cursor: pointer;
+}
+
+.cart-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-menu {
+  display: none;
+  position: absolute;
+  top: 40px; /* Ajusta a posição para ficar abaixo do ícone */
+  right: 20px;
+  background-color: #5f5f5f;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.cart-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-menu img {
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.cart-menu p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: black; /* Muda a cor do texto para preto */
+}
+/* Estilo do botão Remover */
+.cart-menu button.remover {
+  padding: 5px 10px;
+  margin-left: 20px;
+  background-color: #ff4d4d; /* Cor de fundo vermelha */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.cart-menu button.remover:hover {
+  background-color: #cc0000; /* Cor vermelha mais intensa ao passar o mouse */
+}
+
+.confirmar-compra {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #9f6d28; /* Verde para o botão Confirmar Compra */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmar-compra:hover {
+  background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+.limpar-carrinho {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545; /* Vermelho para o botão Limpar Carrinho */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.limpar-carrinho:hover {
+  background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+/* Estilo do botão Remover */
+.menu-carrinho button.remover {
+  margin-left: auto;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-carrinho button.remover:hover {
+  background-color: #cc0000;
+}
+
+
+.menu-carrinho button {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px; /* Ajusta o máximo da largura dos produtos */
+  margin-top: 80px;
+  
+}
+
+.produto {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.produto button {
+  padding: 10px 20px;
+  background-color: #9f6d28;;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+  background-color: #218838;
+}
+
+
+
+
+/* Estilo do rodapé */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto */
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o rodapé */
+}
+
+.footer .container {
+  max-width: 1200px; /* Largura máxima do conteúdo do rodapé */
+  margin: 0 auto; /* Centraliza o conteúdo do rodapé */
+  padding: 0 20px; /* Espaçamento interno */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 14px; /* Tamanho da fonte menor em dispositivos móveis */
+  }
+}
